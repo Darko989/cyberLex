@@ -239,5 +239,63 @@
             document.querySelector('.cookie-banner').style.display = 'none';
         });
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("BR5Jv3HMUxNXA3Fxa");
+        })();
+
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value;
+
+            // Show loading state
+            const submitButton = document.querySelector('.submit-button');
+            const originalText = submitButton.textContent;
+            submitButton.textContent = currentLanguage === 'sr' ? 'Slanje...' : 'Sending...';
+            submitButton.disabled = true;
+
+            emailjs.send('service_9mpfmkg', 'template_0n5kcnb', {
+                from_name: name,
+                from_email: email,
+                selected_service: service,
+                message: message
+            }).then(function() {
+                // Show success message
+                submitButton.textContent = currentLanguage === 'sr' ? 'Poruka poslata!' : 'Message sent!';
+                submitButton.style.backgroundColor = '#4CAF50';
+                
+                // Clear form
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('service').value = '';
+                document.getElementById('message').value = '';
+
+                // Reset button after 3 seconds
+                setTimeout(function() {
+                    submitButton.textContent = originalText;
+                    submitButton.style.backgroundColor = '';
+                    submitButton.disabled = false;
+                }, 3000);
+            }, function(error) {
+                // Show error message
+                submitButton.textContent = currentLanguage === 'sr' ? 'Greška! Pokušajte ponovo.' : 'Error! Please try again.';
+                submitButton.style.backgroundColor = '#f44336';
+                
+                // Reset button after 3 seconds
+                setTimeout(function() {
+                    submitButton.textContent = originalText;
+                    submitButton.style.backgroundColor = '';
+                    submitButton.disabled = false;
+                }, 3000);
+                console.error('Failed to send email:', error);
+            });
+        });
+    </script>
 </body>
 </html> 
