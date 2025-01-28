@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="translations.js"></script>
     <script src="translator.js"></script>
+    <style>
+        .cookie-banner {
+            display: none; /* Hide by default */
+        }
+    </style>
 </head>
 <body>
     <div class="hero-wrapper">
@@ -231,12 +236,28 @@
     </div>
 
     <script>
+        // Function to handle cookie banner
+        function initCookieBanner() {
+            const cookieBanner = document.querySelector('.cookie-banner');
+            const cookieChoice = localStorage.getItem('cookieChoice');
+            
+            // Only show banner if no choice has been made
+            if (!cookieChoice) {
+                cookieBanner.style.display = 'flex';
+            }
+        }
+
+        // Initialize cookie banner when DOM is loaded
+        document.addEventListener('DOMContentLoaded', initCookieBanner);
+
         document.querySelector('.cookie-accept').addEventListener('click', function() {
             document.querySelector('.cookie-banner').style.display = 'none';
+            localStorage.setItem('cookieChoice', 'accepted');
         });
         
         document.querySelector('.cookie-decline').addEventListener('click', function() {
             document.querySelector('.cookie-banner').style.display = 'none';
+            localStorage.setItem('cookieChoice', 'declined');
         });
     </script>
 
