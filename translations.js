@@ -7,6 +7,10 @@ const translations = {
         'nav-expertise': 'Expertise',
         'nav-contact': 'Contact Us',
 
+        // Mobile Titles
+        'mobile-title': 'COMPLIANCE',
+        'mobile-services-title': 'SERVICES',
+
         // Hero Section
         'hero-subtitle': 'Providing specialized consultancy in GDPR, IT law, Serbian data protection, and AI regulations. Whether you\'re a startup, a large corporation, or a public authority, we deliver tailored solutions to meet your unique needs.',
         'hero-cta': 'Get Started',
@@ -184,7 +188,9 @@ const translations = {
         'data-rights-5': 'Data portability',
 
         'contact-privacy-title': 'Contact Us About Privacy',
-        'contact-privacy-desc': 'For privacy-related inquiries, please contact us at:'
+        'contact-privacy-desc': 'For privacy-related inquiries, please contact us at:',
+
+        'mobile-title': 'COMPLIANCE'
     },
     sr: {
         // Navigation
@@ -193,6 +199,10 @@ const translations = {
         'nav-services': 'Usluge',
         'nav-expertise': 'Stručnost',
         'nav-contact': 'Kontakt',
+
+        // Mobile Titles
+        'mobile-title': 'USKLAĐENOST',
+        'mobile-services-title': 'USLUGE',
 
         // Hero Section
         'hero-subtitle': 'Pružamo specijalizovane konsultantske usluge u oblasti GDPR-a, IT prava, srpskog zakona o zaštiti podataka i AI regulativa. Bez obzira da li ste startup, velika korporacija ili državni organ, pružamo prilagođena rešenja koja odgovaraju vašim jedinstvenim potrebama.',
@@ -371,6 +381,8 @@ const translations = {
         'data-rights-5': 'Prenosivost podataka',
 
         'contact-privacy-title': 'Kontaktirajte nas u vezi sa privatnošću',
-        'contact-privacy-desc': 'Za upite vezane za privatnost, molimo vas da nas kontaktirate na:'
+        'contact-privacy-desc': 'Za upite vezane za privatnost, molimo vas da nas kontaktirate na:',
+
+        'mobile-title': 'USKLAĐENOST'
     }
 }; 

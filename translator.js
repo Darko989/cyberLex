@@ -4,6 +4,8 @@ function setLanguage(language) {
     currentLanguage = language;
     localStorage.setItem('language', language);
     translatePage();
+    // Dispatch language change event
+    window.dispatchEvent(new Event('languageChanged'));
     window.location.reload();
 }
 

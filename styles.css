@@ -757,6 +757,56 @@ body {
     .contact-item {
         font-size: 1.1rem;
     }
+
+    /* Remove the pseudo-element content */
+    .hero-left::after {
+        display: none;
+    }
+}
+
+/* Ensure mobile title is properly styled */
+.mobile-title {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.8rem;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    color: #B99466;
+    white-space: nowrap;
+    z-index: 10;
+    letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+    .hero-split {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .hero-left {
+        width: 100%;
+        min-height: 100vh;
+        justify-content: center;
+    }
+
+    /* Hide dark section on mobile */
+    .hero-right {
+        display: none;
+    }
+
+    /* Hide original split title on mobile */
+    .hero-content-left .hero-title,
+    .hero-content-right .hero-title {
+        display: none;
+    }
+
+    /* Show mobile title */
+    .mobile-title {
+        display: block;
+    }
 }
 
 /* Responsive Design */
@@ -790,12 +840,18 @@ body {
 @media (max-width: 768px) {
     .hero-split {
         flex-direction: column;
+        position: relative;
     }
 
-    .hero-left, .hero-right {
+    .hero-left {
         width: 100%;
-        min-height: 50vh;
+        min-height: 100vh;
         justify-content: center;
+    }
+
+    /* Hide dark section on mobile */
+    .hero-right {
+        display: none;
     }
 
     .hero-title {
@@ -808,16 +864,39 @@ body {
         text-align: center;
     }
 
+    /* Hide original split title on mobile */
+    .hero-content-left .hero-title,
+    .hero-content-right .hero-title {
+        display: none;
+    }
+
+    /* Add English version that shows when language is set to English */
+    html[lang="en"] .hero-left::after {
+        content: 'COMPLIANCE';
+    }
+
+    /* Add Serbian version that shows when language is set to Serbian */
+    html[lang="sr"] .hero-left::after {
+        content: 'USKLAĐENOST';
+    }
+
+    /* Remove the previous title position */
+    .hero-split::before {
+        display: none;
+    }
+
     .hero-subtitle {
         position: relative;
         top: auto;
         left: auto;
         transform: none;
         margin-top: 3rem;
+        padding: 0 2rem;
     }
 
     .hero-subtitle p {
         padding: 0 1rem;
+        color: var(--text-color);
     }
 
     .hero-buttons {
