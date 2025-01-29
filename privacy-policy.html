@@ -49,6 +49,13 @@
             color: #121723;
         }
 
+        /* Mobile menu specific styles */
+        @media (max-width: 768px) {
+            .nav-links a:not(.cta-button) {
+                color: var(--light-text);
+            }
+        }
+
         /* Language dropdown color */
         .language-switcher select {
             color: #121723 !important;
@@ -68,6 +75,11 @@
             <a href="index.html">
                 <img src="images/CyberLex__2_-removebg-preview.png" alt="CyberLex Logo" class="logo-img">
             </a>
+        </div>
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
         <div class="nav-links">
             <a href="index.html#hero" data-translate="nav-home">Home</a>
@@ -140,7 +152,7 @@
         <div class="privacy-policy-section">
             <h2 data-translate="contact-privacy-title">Contact Us About Privacy</h2>
             <p data-translate="contact-privacy-desc">For privacy-related inquiries, please contact us at:</p>
-            <p>privacy@cyberlex.com</p>
+            <p>cyberlexinfo@gmail.com</p>
         </div>
     </div>
 
@@ -151,14 +163,14 @@
                 <img src="images/CyberLex (3).png" alt="CyberLex Logo" class="footer-logo">
             </a>
             <div class="footer-contact">
-                <a href="mailto:info@cyberlex.com" class="contact-box">
+                <a href="cyberlexinfo@gmail.com" class="contact-box">
                     <h3 data-translate="email-us">Email Us</h3>
                     <span class="contact-item">
                         <i class="far fa-envelope"></i>
                         cyberlexinfo@gmail.com
                     </span>
                 </a>
-                <a href="tel:+1234567890" class="contact-box">
+                <a href="tel:+381644606343" class="contact-box">
                     <h3 data-translate="call-us">Call Us</h3>
                     <span class="contact-item">
                         <i class="fas fa-phone-alt"></i>
@@ -166,7 +178,7 @@
                         <br>+381 64 455 1906
                     </span>
                 </a>
-                <a href="https://maps.google.com" target="_blank" class="contact-box">
+                <a href="https://www.google.com/maps/place/Nemanjina+31,+%C4%8Ca%C4%8Dak/@43.8861279,20.3458362,825m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4757723fb721f191:0xe0fe279b03c909c4!8m2!3d43.8861241!4d20.3484111!16s%2Fg%2F11tfxg46kq?entry=ttu&g_ep=EgoyMDI1MDEyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="contact-box">
                     <h3 data-translate="visit-us">Visit Us</h3>
                     <span class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
@@ -187,5 +199,49 @@
             </div>
         </div>
     </footer>
+
+    <!-- Back to top button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script>
+        // Mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger-menu');
+            const navLinks = document.querySelector('.nav-links');
+            const navLinksItems = document.querySelectorAll('.nav-links a');
+            const backToTop = document.querySelector('.back-to-top');
+
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+
+            // Close menu when clicking on a link
+            navLinksItems.forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('active');
+                });
+            });
+
+            // Back to top functionality
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html> 
