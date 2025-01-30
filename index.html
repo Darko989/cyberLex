@@ -128,13 +128,6 @@
         </div>
     </div>
 
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/">Početna</a></li>
-            <li class="breadcrumb-item active">Compliance</li>
-        </ol>
-    </nav>
-
     <section id="about" class="about">
         <h2 data-translate="about-title">About Us</h2>
         <div class="team-grid">
@@ -249,6 +242,82 @@
         </div>
     </section>
 
+    <section id="faq" class="faq">
+        <h2 data-translate="faq-title">Frequently Asked Questions about GDPR and Data Protection</h2>
+        
+        <div class="faq-container" itemscope itemtype="https://schema.org/FAQPage">
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-question" itemprop="name">
+                    <h3 data-translate="faq-q1">What is GDPR and does it apply to my business?</h3>
+                    <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text" data-translate="faq-a1"></div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-question" itemprop="name">
+                    <h3 data-translate="faq-q2">What are the penalties for non-compliance with Data Protection Law?</h3>
+                    <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text" data-translate="faq-a2"></div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-question" itemprop="name">
+                    <h3 data-translate="faq-q3">How does AI regulation affect business?</h3>
+                    <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text" data-translate="faq-a3"></div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-question" itemprop="name">
+                    <h3 data-translate="faq-q4">How is international data transfer managed?</h3>
+                    <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text" data-translate="faq-a4"></div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-question" itemprop="name">
+                    <h3 data-translate="faq-q5">How long does the compliance process take?</h3>
+                    <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text" data-translate="faq-a5"></div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-question" itemprop="name">
+                    <h3 data-translate="faq-q6">How do we help clients?</h3>
+                    <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text" data-translate="faq-a6"></div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-question" itemprop="name">
+                    <h3 data-translate="faq-q7">Where do we provide our services?</h3>
+                    <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text" data-translate="faq-a7"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
             <div class="footer-content">
             <a href="index.html">
@@ -287,7 +356,7 @@
                 <a href="privacy-policy.html" data-translate="privacy-policy">Privacy Policy</a>
             </div>
             <div class="footer-bottom">
-                <p data-translate="copyright">&copy; 2025 CyberLex Compliance. Your trusted partner in digital legal compliance.</p>
+                <p data-translate="copyright">&copy; 2025 CyberLEX Compliance. Your trusted partner in digital legal compliance.</p>
             </div>
         </div>
     </footer>
@@ -424,6 +493,31 @@
                     submitButton.disabled = false;
                 }, 3000);
                 console.error('Failed to send email:', error);
+            });
+        });
+    </script>
+
+    <script>
+        // FAQ Accordion functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+                    
+                    // Close all items
+                    faqItems.forEach(faqItem => {
+                        faqItem.classList.remove('active');
+                    });
+                    
+                    // Open clicked item if it wasn't active
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
             });
         });
     </script>

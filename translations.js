@@ -190,7 +190,30 @@ const translations = {
         'contact-privacy-title': 'Contact Us About Privacy',
         'contact-privacy-desc': 'For privacy-related inquiries, please contact us at:',
 
-        'mobile-title': 'COMPLIANCE'
+        'mobile-title': 'COMPLIANCE',
+
+        // FAQ Section
+        'faq-title': 'Frequently Asked Questions about GDPR and Data Protection',
+        'faq-q1': 'What is GDPR and does it apply to my business?',
+        'faq-a1': 'GDPR is an EU regulation that protects privacy and personal data of citizens. It applies to all organizations processing EU citizens\' data, regardless of company location. In Serbia, the Personal Data Protection Law is aligned with GDPR.',
+        
+        'faq-q2': 'What are the penalties for non-compliance with Data Protection Law?',
+        'faq-a2': 'Under Serbian Personal Data Protection Law, penalties for legal entities can amount to 2 million dinars. For serious GDPR violations, fines can reach up to 20 million euros or 4% of global annual turnover.',
+        
+        'faq-q3': 'How does AI regulation affect business?',
+        'faq-a3': 'The new EU AI regulation (AI Act) introduces additional requirements for companies using AI systems. It focuses on data processing transparency, AI system risk assessment, and protection of training data. These rules apply alongside GDPR.',
+        
+        'faq-q4': 'How is international data transfer managed?',
+        'faq-a4': 'International data transfer can be conducted based on adequacy decisions, using standard contractual clauses, or in special situations provided by law. Our team provides support in establishing legal mechanisms for data transfer between different jurisdictions.',
+        
+        'faq-q5': 'How long does the compliance process take?',
+        'faq-a5': 'The process typically takes 3-6 months and includes status assessment, protection measures implementation, documentation preparation, and employee training. Exact duration depends on organization size and current compliance level.',
+        
+        'faq-q6': 'How do we help clients?',
+        'faq-a6': '• GDPR and AI regulation compliance assessment\n• Required documentation preparation\n• Protection measures implementation\n• Employee training\n• Ongoing support',
+        
+        'faq-q7': 'Where do we provide our services?',
+        'faq-a7': 'We provide services throughout the Republic of Serbia, with remote consulting options available for clients from the European Union.',
     },
     sr: {
         // Navigation
@@ -383,6 +406,29 @@ const translations = {
         'contact-privacy-title': 'Kontaktirajte nas u vezi sa privatnošću',
         'contact-privacy-desc': 'Za upite vezane za privatnost, molimo vas da nas kontaktirate na:',
 
-        'mobile-title': 'USKLAĐENOST'
+        'mobile-title': 'USKLAĐENOST',
+
+        // FAQ Section
+        'faq-title': 'Najčešća pitanja o GDPR i zaštiti podataka',
+        'faq-q1': 'Šta je GDPR i da li se odnosi na moje poslovanje?',
+        'faq-a1': 'GDPR je regulativa EU koja štiti privatnost i lične podatke građana. Odnosi se na sve organizacije koje obrađuju podatke građana EU, bez obzira na lokaciju kompanije. U Srbiji je na snazi Zakon o zaštiti podataka o ličnosti koji je usklađen sa GDPR-om.',
+        
+        'faq-q2': 'Koje su kazne za neusklađenost sa Zakonom o zaštiti podataka?',
+        'faq-a2': 'Prema srpskom Zakonu o zaštiti podataka o ličnosti, kazne za pravna lica mogu iznositi do 2 miliona dinara. Za ozbiljnije povrede GDPR-a, kazne mogu dostići i do 20 miliona evra ili 4% globalnog godišnjeg prometa.',
+        
+        'faq-q3': 'Kako AI regulativa utiče na poslovanje?',
+        'faq-a3': 'Nova EU regulativa o veštačkoj inteligenciji (AI Act) uvodi dodatne zahteve za kompanije koje koriste AI sisteme. Fokus je na transparentnosti obrade podataka, proceni rizika AI sistema i zaštiti podataka koji se koriste za treniranje. Ova pravila se primenjuju zajedno sa GDPR-om.',
+        
+        'faq-q4': 'Kako se upravlja međunarodnim prenosom podataka?',
+        'faq-a4': 'Međunarodni prenos podataka može se vršiti na osnovu odluke o adekvatnosti, primenom standardnih ugovornih klauzula ili u posebnim situacijama predviđenim zakonom. Naš tim pruža podršku u uspostavljanju zakonitih mehanizama za prenos podataka između različitih jurisdikcija.',
+        
+        'faq-q5': 'Koliko traje proces usklađivanja?',
+        'faq-a5': 'Proces tipično traje 3-6 meseci i uključuje procenu stanja, implementaciju mera zaštite, izradu dokumentacije i obuku zaposlenih. Tačno trajanje zavisi od veličine organizacije i trenutnog nivoa usklađenosti.',
+        
+        'faq-q6': 'Kako mi pomažemo klijentima?',
+        'faq-a6': '• Procena usklađenosti sa GDPR i AI regulativom\n• Izrada potrebne dokumentacije\n• Implementacija zaštitnih mera\n• Obuka zaposlenih\n• Kontinuirana podrška',
+        
+        'faq-q7': 'Gde pružamo usluge?',
+        'faq-a7': 'Usluge pružamo na teritoriji Republike Srbije, sa mogućnošću remote konsaltinga za klijente iz Evropske unije.',
     }
 }; 
