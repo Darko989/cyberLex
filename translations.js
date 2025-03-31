@@ -6,6 +6,7 @@ const translations = {
         'nav-services': 'Services',
         'nav-expertise': 'Expertise',
         'nav-contact': 'Contact Us',
+        'nav-blog': 'Blog',
 
         // Mobile Titles
         'mobile-title': 'COMPLIANCE',
@@ -20,7 +21,7 @@ const translations = {
         'legal-expert': 'Legal Expert',
         'dpo-expert': 'DPO & IT Expert',
         'uros-bio': 'A seasoned lawyer specialized in various legal fields with extensive experience in public authorities, where he served as a patient rights lawyer. His diverse background enables him to provide comprehensive legal solutions across multiple domains.',
-        'darko-bio': 'An accomplished professional with dual expertise in IT and data protection. Having served as a QA Director and Data Protection Officer for multiple companies, Darko brings a unique blend of technical knowledge and privacy expertise to ensure comprehensive compliance solutions.',
+        'darko-bio': 'An accomplished professional with dual expertise in IT and data protection. As a QA Director and certified Data Protection Manager, Darko brings a unique blend of technical knowledge and privacy expertise, providing comprehensive compliance solutions.',
         'linkedin-connect': 'Connect on LinkedIn',
 
         // Services Section
@@ -214,6 +215,41 @@ const translations = {
         
         'faq-q7': 'Where do we provide our services?',
         'faq-a7': 'We provide services throughout the Republic of Serbia, with remote consulting options available for clients from the European Union.',
+
+        // Blog Section
+        'blog-title': 'Latest Insights & Updates',
+        'blog-subtitle': 'Expert analysis on data protection, GDPR, and AI regulations',
+        
+        // Blog Categories
+        'category-ai': 'AI Regulation',
+        'category-gdpr': 'GDPR',
+        'category-security': 'Data Security',
+        'category-compliance': 'Compliance',
+        
+        // Blog Post Titles and Excerpts
+        'post-1-title': 'EU AI Act: What Serbian Companies Need to Know',
+        'post-1-excerpt': 'The EU AI Act introduces comprehensive regulations for artificial intelligence systems. Learn how this affects Serbian businesses and what steps you need to take for compliance.',
+        
+        'post-2-title': 'Key GDPR Updates for 2024',
+        'post-2-excerpt': 'Recent changes in GDPR interpretation and enforcement that businesses need to be aware of, including new guidelines on data transfers and AI processing.',
+        
+        'post-3-title': 'Essential Data Protection Measures for Small Businesses',
+        'post-3-excerpt': 'Practical guide for implementing effective data protection measures in small businesses, focusing on cost-effective solutions and best practices.',
+        
+        'post-4-title': '5 Common GDPR Compliance Mistakes to Avoid',
+        'post-4-excerpt': 'Learn about the most common compliance pitfalls and how to avoid them, based on our experience with numerous clients across different industries.',
+        
+        // Blog Image Alt Text
+        'ai-act-img-alt': 'EU AI Act Illustration',
+        'gdpr-img-alt': 'GDPR Updates Illustration',
+        'protection-img-alt': 'Data Protection Illustration',
+        'compliance-img-alt': 'Compliance Tips Illustration',
+        
+        // Newsletter Section
+        'newsletter-title': 'Stay Updated',
+        'newsletter-desc': 'Subscribe to our newsletter for the latest updates on data protection and compliance',
+        'subscribe-button': 'Subscribe',
+        'read-more': 'Read More',
     },
     sr: {
         // Navigation
@@ -222,6 +258,7 @@ const translations = {
         'nav-services': 'Usluge',
         'nav-expertise': 'Stručnost',
         'nav-contact': 'Kontakt',
+        'nav-blog': 'Blog',
 
         // Mobile Titles
         'mobile-title': 'USKLAĐENOST',
@@ -236,7 +273,7 @@ const translations = {
         'legal-expert': 'Pravni stručnjak',
         'dpo-expert': 'DPO & IT stručnjak',
         'uros-bio': 'Iskusni pravnik specijalizovan za različite pravne oblasti sa velikim iskustvom u državnim organima, gde je radio kao advokat za prava pacijenata. Njegovo raznovrsno iskustvo omogućava mu da pruži sveobuhvatna pravna rešenja u više domena.',
-        'darko-bio': 'Uspešan profesionalac sa dvostrukom ekspertizom u IT-u i zaštiti podataka. Radio je kao QA direktor i službenik za zaštitu podataka za više kompanija, Darko donosi jedinstvenu kombinaciju tehničkog znanja i ekspertize u privatnosti kako bi osigurao sveobuhvatna rešenja za usklađenost.',
+        'darko-bio': 'Uspešan profesionalac sa dvostrukom ekspertizom u IT-u i zaštiti podataka. Kao QA direktor i sertifikovani menadzer za zaštitu podataka, Darko donosi jedinstvenu kombinaciju tehničkog znanja i ekspertize u privatnosti, pružajući sveobuhvatna rešenja za usklađenost.',
         'linkedin-connect': 'Povežite se na LinkedIn-u',
 
         // Services Section
@@ -430,5 +467,40 @@ const translations = {
         
         'faq-q7': 'Gde pružamo usluge?',
         'faq-a7': 'Usluge pružamo na teritoriji Republike Srbije, sa mogućnošću remote konsaltinga za klijente iz Evropske unije.',
+
+        // Blog Section
+        'blog-title': 'Najnoviji uvidi i ažuriranja',
+        'blog-subtitle': 'Stručna analiza zaštite podataka, GDPR-a i AI regulative',
+        
+        // Blog Categories
+        'category-ai': 'AI Regulativa',
+        'category-gdpr': 'GDPR',
+        'category-security': 'Zaštita podataka',
+        'category-compliance': 'Usklađenost',
+        
+        // Blog Post Titles and Excerpts
+        'post-1-title': 'EU AI Act: Šta srpske kompanije treba da znaju',
+        'post-1-excerpt': 'EU AI Act uvodi sveobuhvatne propise za sisteme veštačke inteligencije. Saznajte kako ovo utiče na srpska preduzeća i koje korake treba preduzeti za usklađivanje.',
+        
+        'post-2-title': 'Ključne GDPR izmene za 2024',
+        'post-2-excerpt': 'Nedavne promene u tumačenju i sprovođenju GDPR-a koje preduzeća treba da znaju, uključujući nove smernice o prenosu podataka i AI obradi.',
+        
+        'post-3-title': 'Osnovne mere zaštite podataka za mala preduzeća',
+        'post-3-excerpt': 'Praktični vodič za implementaciju efikasnih mera zaštite podataka u malim preduzećima, sa fokusom na ekonomična rešenja i najbolje prakse.',
+        
+        'post-4-title': '5 čestih grešaka u GDPR usklađenosti koje treba izbegavati',
+        'post-4-excerpt': 'Saznajte o najčešćim zamkama usklađenosti i kako ih izbeći, na osnovu našeg iskustva sa brojnim klijentima iz različitih industrija.',
+        
+        // Blog Image Alt Text
+        'ai-act-img-alt': 'EU AI Act Ilustracija',
+        'gdpr-img-alt': 'GDPR Ažuriranja Ilustracija',
+        'protection-img-alt': 'Zaštita Podataka Ilustracija',
+        'compliance-img-alt': 'Saveti za Usklađenost Ilustracija',
+        
+        // Newsletter Section
+        'newsletter-title': 'Ostanite u toku',
+        'newsletter-desc': 'Prijavite se na naš newsletter za najnovije informacije o zaštiti podataka i usklađenosti',
+        'subscribe-button': 'Prijavi se',
+        'read-more': 'Pročitaj više',
     }
 }; 
